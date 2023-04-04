@@ -1,0 +1,42 @@
+.checkoutForm {
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+  padding: 10rem 0;
+  flex-direction: column;
+
+  button {
+    border: none;
+    padding: 2rem;
+    background-color: var(--main-green);
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .error {
+    color: red;
+    font-size: 1.8rem;
+  }
+
+  .spinner {
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-left: 5px solid white;
+    animation: rotation 0.5s infinite ease-in-out;
+  }
+
+  @keyframes rotation {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.catcard {
+  width: 25rem;
+  height: 35rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+  }
+
+  .desc {
+    position: absolute;
+    font-size: 1.8rem;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .title {
+    font-weight: 500;
+    font-size: 2.4rem;
+    position: absolute;
+    top: 4rem;
+    left: 1.5rem;
+  }
+}

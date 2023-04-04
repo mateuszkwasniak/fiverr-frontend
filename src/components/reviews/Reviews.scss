@@ -1,0 +1,63 @@
+.reviews {
+  margin-top: 5rem;
+
+  h2 {
+    margin-bottom: 5rem;
+  }
+
+  hr {
+    height: 0;
+    border: 0;
+    border-top: 0.5px solid lightgray;
+    margin: 3rem 0;
+  }
+
+  .add {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    grid-area: 2rem;
+
+    h3 {
+      font-size: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      input {
+        padding: 2rem;
+      }
+
+      .wrap {
+        display: flex;
+
+        .error {
+          font-size: 2rem;
+          color: red;
+        }
+
+        select {
+          width: 20rem;
+          padding: 2rem;
+          margin-left: auto;
+        }
+      }
+
+      button {
+        align-self: flex-end;
+        width: 10rem;
+        border: none;
+        cursor: pointer;
+        padding: 1rem;
+        color: white;
+        background-color: var(--main-green);
+        border-radius: 5px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

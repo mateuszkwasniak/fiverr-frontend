@@ -1,0 +1,124 @@
+.add {
+  display: flex;
+  justify-content: center;
+  margin-top: 13rem;
+  .container {
+    width: 1400px;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 3.5rem;
+
+      margin-bottom: 3rem;
+    }
+
+    form {
+      display: flex;
+      justify-content: space-between;
+      gap: 10rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 40%;
+
+      label {
+        color: gray;
+        font-size: 1.8rem;
+
+        &.wrapper {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          cursor: pointer;
+          img {
+            margin-left: 1rem;
+            width: 3rem;
+            color: gray;
+          }
+
+          span {
+            font-size: 1.5rem;
+          }
+
+          input {
+            display: none;
+          }
+        }
+      }
+
+      input,
+      select,
+      textarea {
+        padding: 2rem;
+        resize: none;
+        background-color: transparent;
+        border: 1px solid var(--gray);
+        outline: none;
+      }
+
+      button {
+        border: none;
+        padding: 2rem;
+        background-color: var(--main-green);
+        color: white;
+        font-size: 1.8rem;
+        cursor: pointer;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+      }
+
+      .error {
+        color: red;
+        font-size: 1.8rem;
+      }
+
+      .featureSectionWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .buttonWrapper {
+          display: flex;
+          align-items: center;
+
+          width: 100%;
+
+          .addFeature {
+            cursor: pointer;
+            border: 1px solid gray;
+            border-radius: 50%;
+            height: 4rem;
+            width: 4rem;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: gray;
+          }
+        }
+
+        .inputWrapper {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          input {
+            flex: 0.9;
+          }
+          span {
+            flex: 0.1;
+            display: flex;
+            justify-content: flex-end;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

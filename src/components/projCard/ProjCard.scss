@@ -1,0 +1,58 @@
+.projcard {
+  width: 30rem;
+  height: 30rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 9px 11px 19px -16px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 9px 11px 19px -16px rgba(66, 68, 90, 1);
+  box-shadow: 9px 11px 19px -16px rgba(66, 68, 90, 1);
+
+  .top {
+    height: 22rem;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  .bottom {
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    gap: 2rem;
+    background-color: white;
+
+    img {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .details {
+      font-size: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+      .category {
+        color: var(--gray);
+      }
+
+      .by {
+        color: var(--lighter-gray);
+      }
+    }
+  }
+}

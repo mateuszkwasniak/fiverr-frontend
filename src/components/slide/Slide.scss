@@ -1,0 +1,36 @@
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0rem;
+
+  &.whiteArrowsBcg {
+    .container .carousel .react-multiple-carousel__arrow {
+      background-color: white;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  .container {
+    width: 1400px;
+    display: flex;
+    justify-content: center;
+
+    .carousel {
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px 0;
+      margin: -20px 0;
+
+      .react-multiple-carousel__arrow {
+        background-color: lightgray;
+        stroke: gray;
+
+        &::before {
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

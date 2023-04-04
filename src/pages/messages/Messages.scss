@@ -1,0 +1,64 @@
+.messages {
+  display: flex;
+  justify-content: center;
+  margin-top: 13rem;
+
+  .container {
+    width: 1400px;
+    padding: 5rem 0;
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1.6rem;
+      tr {
+        height: 10rem;
+
+        &.active {
+          background-color: #1dbf730f;
+        }
+
+        th {
+          font-weight: bolder;
+          text-align: left;
+          font-size: 2rem;
+        }
+
+        td {
+          padding: 1rem;
+
+          &:first-child {
+            font-weight: 500;
+            color: black;
+          }
+
+          &:nth-child(2),
+          &:nth-child(3) {
+            color: gray;
+          }
+          button {
+            background-color: var(--main-green);
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            outline: none;
+            border-radius: 5px;
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}

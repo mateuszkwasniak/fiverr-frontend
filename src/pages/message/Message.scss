@@ -1,0 +1,106 @@
+.message {
+  display: flex;
+  justify-content: center;
+  margin-top: 13rem;
+  height: calc(100vh - 13rem);
+  .container {
+    margin: 5rem;
+    margin-top: 0;
+    width: 1200px;
+
+    .breadcrumbs {
+      font-weight: 300;
+      font-size: 1.3rem;
+      color: #555;
+    }
+  }
+
+  .messages {
+    margin: 3rem 0;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    height: 65%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+    .item {
+      display: flex;
+      gap: 2rem;
+      max-width: 60rem;
+      font-size: 1.8rem;
+
+      &.owner {
+        flex-direction: row-reverse;
+        align-self: flex-end;
+
+        p {
+          background-color: rgb(244, 244, 244);
+          color: var(--gray);
+          border-radius: 20px 0 20px 20px;
+        }
+      }
+
+      img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+        top: -2rem;
+      }
+
+      p {
+        color: white;
+        padding: 2rem;
+        background-color: var(--main-green);
+        border-radius: 0 20px 20px 20px;
+      }
+    }
+  }
+
+  hr {
+    height: 0;
+    border: 0;
+    border-top: 0.5px solid lightgray;
+    margin-bottom: 2rem;
+  }
+
+  .write {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+
+    textarea {
+      width: 80%;
+      height: 100%;
+      padding: 2rem;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      outline: none;
+      font-size: 2rem;
+      resize: none;
+
+      &::placeholder {
+        color: var(--lighter-gray);
+      }
+    }
+
+    button {
+      background-color: var(--main-green);
+      padding: 2rem;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 10rem;
+      font-size: 2rem;
+      align-self: flex-end;
+      position: relative;
+      left: -10rem;
+    }
+  }
+}

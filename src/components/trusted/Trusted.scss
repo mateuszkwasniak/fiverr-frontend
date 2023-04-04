@@ -1,0 +1,23 @@
+.trusted {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 76rem;
+    color: lightgray;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    span {
+      font-weight: bold;
+      font-size: 1.75rem;
+    }
+
+    .company {
+      font-weight: normal;
+      font-size: 1.5rem;
+    }
+  }
+}
